@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedVion | Official Download</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #070707;
+      color: #e0e0e0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+      position: relative;
+    }
+
+    /* Thunder Blue Glowing Logo */
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00bfff;
+      letter-spacing: 3px;
+      text-shadow: 0 0 20px #00bfff, 0 0 40px #0099cc, 0 0 60px #0077aa;
+      position: relative;
+      animation: flicker 3s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 20px #00bfff, 0 0 40px #0099cc, 0 0 60px #0077aa;
+      }
+      20%, 24%, 55% {
+        text-shadow: none;
+      }
+    }
+
+    /* Illusion background effect */
+    .illusion {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: radial-gradient(circle at center, rgba(0,191,255,0.15) 0%, transparent 70%);
+      animation: pulse 6s infinite alternate;
+      filter: blur(60px);
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); opacity: 0.6; }
+      to { transform: scale(1.2); opacity: 0.9; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .description {
+      color: #bfbfbf;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .info {
+      background: #101010;
+      border: 1px solid #1c1c1c;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: left;
+      max-width: 650px;
+      margin: 0 auto 40px;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+    }
+
+    .info div {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #00bfff;
+      font-weight: 600;
+    }
+
+    .download-btn {
+      background: linear-gradient(90deg, #0078d7, #00bfff);
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 35px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      transition: 0.3s ease;
+      box-shadow: 0 0 20px rgba(0,191,255,0.3);
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(90deg, #00bfff, #0078d7);
+      box-shadow: 0 0 30px rgba(0,191,255,0.6);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 50px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="illusion"></div>
+    <h1 class="logo">RedVion</h1>
+  </header>
+
+  <section class="container fade-in">
+    <p class="description">
+      Welcome to the <span class="highlight">Official RedVion Download Page</span> — where technology meets innovation.
+      Download the latest version of <span class="highlight">RedVion AI</span>, experience its lightning-fast performance,
+      intelligent design, and next-gen AI precision.
+    </p>
+
+    <div class="info">
+      <div><span class="highlight">Version:</span> 1.0.0 (Stable)</div>
+      <div><span class="highlight">File Size:</span>10.2 MB</div>
+      <div><span class="highlight">Release Date:</span> October 2025</div>
+      <div><span class="highlight">Developer:</span> RedVion Technologies</div>
+      <div><span class="highlight">Platform:</span> Windows 10/11 (64-bit)</div>
+    </div>
+
+    <a href="RedVion-AI.zip" class="download-btn" download>⬇Download Now</a>
+  </section>
+
+  <footer>
+    <p>© 2025 RedVion Technologies. All rights reserved.</p>
+    <p>Made with ⚡ precision by RedVion AI.</p>
+  </footer>
+
+</body>
+</html>
